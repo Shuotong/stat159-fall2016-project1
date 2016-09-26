@@ -1,0 +1,29 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <title></title>
+  <style type="text/css">code{white-space: pre;}</style>
+</head>
+<body>
+<h1 id="abstract">Abstract:</h1>
+<p>In this paper, I will talk about the roles of serveral tools in reproducible workflow by showing how I work on this paper using those tools. Tools include but not limit to bash, markdown, pandoc, git, github, Make, and sublime.</p>
+<hr />
+<div class="figure">
+<img src="https://raw.githubusercontent.com/ucb-stat159/stat159-fall-2016/master/projects/proj01/images/git-logo.png" alt="" />
+
+</div>
+<h1 id="introduction">Introduction:</h1>
+<p>The overall flow is first to create the project strucuture using bash command, then set Makefile correctly, and finally work on each markdown file.</p>
+<p>The preparation step is to create a github repo either on github website then use <code>git clone</code> or using <code>git init</code> command to create an empty git repository.</p>
+<h1 id="discussion">Discussion:</h1>
+<h3 id="preparation-step">Preparation Step:</h3>
+<p>First, let's talk about git. Git is the mostly widely used modern version control system. It keeps track of every modification to the code and allow developers to compare, revise eariler versions of the code to help fix bugs. The benefit of committing frequently is that even if I mess something up, I can also go back to an eariler version of my code and restart from the commit checkpoints I make.</p>
+<p>GitHub provides web-based hosting service for Git repositories. It allows users to share repositories with others, and access other user's repositories.It also make collaborate work on a project easy and convenient.</p>
+<h3 id="makefile">Makefile</h3>
+<p>Makefile plays an important role in this reproducible work. Once I setup the Makefile correctly according to my project structure, I can always run <code>make</code> to see my progress or temporary changes. And I don't need to modify Makefile unless the project strucutre is changed. It's not only really convenient for me, but also for whoever want to reproduce my work. Since the dependency are already declared in Makefile, even for people who are not familiar with my project, they can still simply run <code>make</code> to reproduce my work.</p>
+<h3 id="markdown">Markdown</h3>
+</body>
+</html>
